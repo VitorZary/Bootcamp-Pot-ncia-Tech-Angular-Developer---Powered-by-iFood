@@ -1,0 +1,92 @@
+Requisição HTTP
+
+     URL: https://pokeapi.co/api/v2/pokemon/
+          ${IP}/${path = caminho de identificação do recurso}
+
+     IP/Endereço: https://pokeapi.co
+               http://127.0.0.1:80
+
+     Path: /api/v2/pokemon/
+
+     Request Method: GET | POST | PUT | DELETE
+
+
+Passagem de parâmetro:
+
+     Path:
+          https://pokeapi.co/api/v2/pokemon/1
+
+
+     Query string:
+          https://pokeapi.co/api/v2/pokemon?type=grass
+          https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+
+     Paginação da busca:
+          https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
+          https://pokeapi.co/api/v2/pokemon?
+          offset=20
+          limit=20
+
+
+Headers:
+
+     Response Headers:
+          Configuração
+          Exemplo:
+               content-type: 
+                    application/json; charset=utf-8
+
+     Request Headers:
+          Configuração
+          Exemplo:
+               accept: 
+                    text/html,
+                    application/xhtml+xml,
+                    application/xml;q=0.9,
+                    image/avif,
+                    image/webp,
+                    image/apng,
+                    */*;q=0.8,
+                    application/signed-exchange;v=b3;q=0.7
+               accept-language: 
+                    pt-BR;q=1,
+                    pt;q=0.9,
+                    en-US;q=0.8,
+                    en;q=0.7
+               Authorization: 
+                    Basic, Bearer
+
+Body:
+
+     Request Headers 
+          content-type: application/json
+     
+     Request body
+     {
+          "name" : "Teste"
+     }
+
+
+
+
+Composição de uma Requisição HTTP:
+
+     URL: https://pokeapi.co/api/v2/pokemon/
+          ${IP}/${path = caminho de identificação do recurso}
+
+     Request Method: GET | POST | PUT | DELETE
+
+     Request Headers
+          content-type: application/json
+     
+     Request Body
+     {
+          "name": "Teste"
+     }
+
+
+     Status Code: 200 OK
+
+     Response Headers
+
+     Response Body  
